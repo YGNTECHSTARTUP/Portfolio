@@ -1,11 +1,12 @@
 // "use client"
 import React from 'react'
-import { shantell } from '@/app/layout'
+import { Shantell_Sans } from 'next/font/google';
 import { TypewriterEffect } from './Typewriter-effect'
 import Link from 'next/link';
 import {  FollowerPointerCard } from '@/app/components/ui/Followindpointer';
 import Image from 'next/image';
 import { Button } from './Button';
+const shantell = Shantell_Sans({ subsets: ["latin"] });
 const description = `
   A passionate full-stack developer with expertise in adaptability. 
   
