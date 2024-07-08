@@ -6,7 +6,7 @@ const page = () => {
   return (
     <DotBackgroundDemo>
       <div className='overflow-hidden'>
-      <div className='font-extrabold text-center underline text-black dark:text-white '>
+      <div className='bg-white dark:bg-black font-extrabold text-center underline text-black dark:text-white '>
             About Me
         </div>
       <div className='text-black  dark:text-white lg:flex'>
