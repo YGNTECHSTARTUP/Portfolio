@@ -1,4 +1,5 @@
 import { ImageResponse } from '@vercel/og';
+import Image from 'next/image';
  
 export const config = {
   runtime: 'edge',
@@ -20,7 +21,7 @@ export default async function handler() {
           alignItems: 'center',
         }}
       >
-        👋 Hello 你好 नमस्ते こんにちは สวัสดีค่ะ 안녕 добрий день Hallá
+        <Image src={'/pics.png'} alt='pics' height={250} width={250} />
       </div>
     ),
     {
