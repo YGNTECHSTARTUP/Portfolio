@@ -18,7 +18,7 @@ const submitguest = async () => {
     <div className=''>
         <h1 className='text-center text-4xl lg:text-6xl font-extrabold mt-5'>Guest Book</h1>
         <div className="md:flex justify-center p-5 gap-5  ">   <Input placeholder="Leave Your Message Here" className="max-w-lg focus:border-teal-400  dark:focus:border-purple-500"/>
-          <Button variant={'outline'} onClick={submitguest} className="mt-4 md:mt-0 hover:bg-teal-500 dark:hover:bg-purple-500">Submit<ArrowRight/></Button></div>
+          <Button variant={'outline'}  className="mt-4 md:mt-0 hover:bg-teal-500 dark:hover:bg-purple-500">Submit<ArrowRight/></Button></div>
    <Card className='bg-slate-200 dark:bg-slate-600 container mx-auto '>
 <CardContent>
   <UserButton/>
