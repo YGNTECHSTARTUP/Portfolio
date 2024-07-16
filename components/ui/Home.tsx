@@ -3,7 +3,6 @@ import React from 'react'
 import { Shantell_Sans } from 'next/font/google';
 import { TypewriterEffect } from './Typewriter-effect'
 import Link from 'next/link';
-import {  FollowerPointerCard } from '@/app/components/ui/Followindpointer';
 import Image from 'next/image';
 import { Button } from './Button';
 const shantell = Shantell_Sans({ subsets: ["latin"] });
@@ -28,6 +27,7 @@ const Home = () => {
   return (
     
 <div className={shantell.className}>
+
    <div className='rounded-full hover:scale-105  hover:border-teal-500 dark:hover:border-violet-700 border-black border-4  w-48 h-48 md:w-[18rem] md:h-[18rem] lg:w-96 lg:h-96 bg-black flex justify-center mx-auto'>
 <Image src={'/pics.png'} alt='profile pic' height={1020} width={1020}/>
    </div>

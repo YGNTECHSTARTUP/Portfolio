@@ -10,7 +10,7 @@ const NavLinks = [
   { name: "My Tech Stack", href: "/MyTechStack" },
   { name: "Projects", href: "/Projects" },
   { name: "GuestBook", href: "/GuestBook" },
-  { name: "Contact Me", href: "/ContactMe" }
+  { name: "NewsLetter", href: "/ContactMe" }
 ];
 
 const navlink = [
@@ -22,7 +22,7 @@ const navlink = [
 const nav = [
   { name: "My Tech Stack", href: "/MyTechStack" },
   { name: "Projects", href: "/Projects" },
-  { name: "Contact Me", href: "/ContactMe" }
+  { name: "NewsLetter", href: "/ContactMe" }
 ];
 
 const navbar = () => {
@@ -40,7 +40,7 @@ const navbar = () => {
 &nbsp;
     <Sheet >
       <SheetTrigger >
-      <CircleArrowDown fill="black" size={45} className='mt-1  text-white'/>
+      <CircleArrowDown fill="black" size={45} className='mt-1  text-white  delay-1000 ease-in-out transition-transform '/>
       </SheetTrigger>
       <SheetContent side={'top'} className='transition '>
       <SheetHeader >

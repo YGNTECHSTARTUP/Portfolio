@@ -53,16 +53,16 @@ const page = () => {
        </li>
        <li className='m-5'>
        I don&apos;t talk much over any platform but I like making friends (be it online or irl though I&apos;m somewhat introverted!). So, in case you want to talk about anything, just hit me up and I&apos;ll get back to you once I&apos;m active/online. All my social links are listed
-       <span className='text-teal-700  underline dark:text-violet-700  underline-offset-2 decoration-wavy' >
+      <Link href={'/Links'}>
+      <span className='text-teal-700  underline dark:text-violet-700  underline-offset-2 decoration-wavy' >
        here
        </span >
+      </Link>
+       
        .
        </li>
        <li className='m-5'>
-       That&apos;s pretty much everything I know about me yet. In case you know something about me that I still don&apos;t, please let me know - I&apos;ll add it
-       
-       <span className='text-teal-700  underline dark:text-violet-700  underline-offset-2 decoration-wavy' > here
-        </span>.
+       That&apos;s pretty much everything I know about me yet.
        </li>
         </ul>
        
