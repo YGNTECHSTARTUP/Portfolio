@@ -1,0 +1,62 @@
+{
+  "id": "5c09aa35-9979-422d-bedb-34eeab6958c8",
+  "prevId": "e51af864-d8b4-48c6-bd4a-7d666f09006f",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.guest_Entries": {
+      "name": "guest_Entries",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "img": {
+          "name": "img",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ids": {
+          "name": "ids",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hasimg": {
+          "name": "hasimg",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "message": {
+          "name": "message",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

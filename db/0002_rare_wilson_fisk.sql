@@ -1,0 +1,1 @@
+ALTER TABLE "guest_Entries" ADD COLUMN "message" text;

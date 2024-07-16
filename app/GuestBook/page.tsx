@@ -1,28 +1,60 @@
 // "use client"
 import React from 'react'
-import { Input } from '../components/ui/Input'
-import { Button } from '@/components/ui/Button'
-import { ArrowRight } from 'lucide-react'
-import { Card, CardContent } from '../components/ui/Card'
+
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/Card'
 import { UserButton } from '@clerk/nextjs'
 import { currentUser } from '@clerk/nextjs/server'
+import SubmitGuest from '../components/ui/SubmitGuest'
+import { db } from '@/db/db'
+import { GuestEntries } from '@/db/schema'
+import Image from 'next/image'
+import dynamic from 'next/dynamic'
+export const runtime = dynamic
 const Page = async () => {
-// const {userId} =  auth()
+  
+  const users = async () => {
+    const us = await db.select().from(GuestEntries)
+    return us
+  }
+  const res = await users().then((r)=>r.reverse())
+  
+  console.log(res)
 
-const submitguest = async () => {
   const user = await currentUser()
-  console.log(user)
-}
-  // console.log(userId)
+  let isme = false
+  const usernames = user?.username || ''
+
   return (
     <div className=''>
-        <h1 className='text-center text-4xl lg:text-6xl font-extrabold mt-5'>Guest Book</h1>
-        <div className="md:flex justify-center p-5 gap-5  ">   <Input placeholder="Leave Your Message Here" className="max-w-lg focus:border-teal-400  dark:focus:border-purple-500"/>
-          <Button variant={'outline'}  className="mt-4 md:mt-0 hover:bg-teal-500 dark:hover:bg-purple-500">Submit<ArrowRight/></Button></div>
-   <Card className='bg-slate-200 dark:bg-slate-600 container mx-auto '>
+      {
+         user &&  <SubmitGuest ids={user.id} img={user.imageUrl} name={user.username ?? user.firstName} hasimg={user.hasImage}/>
+      }
+        <Card className='bg-slate-200 dark:bg-slate-600 container mx-auto '>
 <CardContent>
   <UserButton/>
-
+ <div className='container mx-auto'>
+{
+  res.map((r)=>
+    {
+       if(r.name == usernames){
+          isme = true
+       }
+      
+    return (
+      <Card key={r.id} className='bg-slate-100 mt-9 dark:bg-slate-950 max-w-3xl container mx-auto' >
+        <CardHeader className={isme?'flex flex-col items-start':'flex flex-col items-end'}>
+          <Image src={r.img || '/pics.png'} alt={r.img || 'djf'} height={24} width={24} className='w-20 h-20 rounded-full'/>
+          <CardTitle className='text-teal-500 text-2xl dark:text-purple-500'>{r.name}</CardTitle>
+        </CardHeader>
+        <CardContent className={isme?'flex flex-col items-start':'flex flex-col items-end'}>
+          <CardDescription className='text=black dark:text-white'>{r.message}</CardDescription>
+        </CardContent>
+      </Card>
+    
+    )
+  })
+}
+ </div>
 </CardContent>
    </Card>
     </div>

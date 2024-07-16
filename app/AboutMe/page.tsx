@@ -62,7 +62,12 @@ const page = () => {
        .
        </li>
        <li className='m-5'>
-       That&apos;s pretty much everything I know about me yet.
+       That&apos;s pretty much everything I know about me yet. If you know anything about me anything then you can leave your message
+       <Link href={'/GuestBook'}>
+      <span className='text-teal-700  underline dark:text-violet-700  underline-offset-2 decoration-wavy' >
+       here
+       </span >
+      </Link>
        </li>
         </ul>
        
