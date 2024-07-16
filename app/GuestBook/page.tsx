@@ -8,8 +8,7 @@ import SubmitGuest from '../components/ui/SubmitGuest'
 import { db } from '@/db/db'
 import { GuestEntries } from '@/db/schema'
 import Image from 'next/image'
-// import dynamic from 'next/dynamic'
-export const runtime = "dynamic"
+export const dynamic = "force-dynamic";
 const Page = async () => {
   
   const users = async () => {
