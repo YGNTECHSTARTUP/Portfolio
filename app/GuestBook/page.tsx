@@ -20,7 +20,7 @@ const Page = async () => {
   console.log(res)
 
   const user = await currentUser()
-  let isme = false
+  
   const usernames = user?.username || ''
 
   return (
@@ -34,7 +34,9 @@ const Page = async () => {
  <div className='container mx-auto'>
 {
   res.map((r)=>
+    
     {
+      let isme = false
        if(r.name == usernames){
           isme = true
        }
