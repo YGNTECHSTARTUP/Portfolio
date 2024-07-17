@@ -42,13 +42,13 @@ const Page = async () => {
        }
       
     return (
-      <Card key={r.id} className='bg-slate-100 mt-9 dark:bg-slate-950 max-w-3xl container mx-auto' >
+      <Card key={r.id} className='bg-slate-100 mt-9 dark:bg-slate-950 max-w-3xl max-h-40 container mx-auto' >
         <CardHeader className={isme?'flex flex-col items-start':'flex flex-col items-end'}>
-          <Image src={r.img || '/pics.png'} alt={r.img || 'djf'} height={24} width={24} className='w-20 h-20 rounded-full'/>
-          <CardTitle className='text-teal-500 text-2xl dark:text-purple-500'>{r.name}</CardTitle>
+          <Image src={r.img || '/pics.png'} alt={r.img || 'djf'} height={25} width={25} className=' rounded-full'/>
+          <CardTitle className='text-teal-500 text-md dark:text-purple-500'>{r.name}</CardTitle>
         </CardHeader>
         <CardContent className={isme?'flex flex-col items-start':'flex flex-col items-end'}>
-          <CardDescription className='text=black dark:text-white'>{r.message}</CardDescription>
+          <CardDescription className='text-black dark:text-white'>{r.message}</CardDescription>
         </CardContent>
       </Card>
     
