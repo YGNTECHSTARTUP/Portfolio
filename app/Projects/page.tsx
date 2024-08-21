@@ -13,7 +13,7 @@ const page = () => {
       {
         title:'Profinaty Guardian',
         imageUrl:'/profinati.png',
-        description:'Profinati Guardian is a real-time content moderation API that uses machine learning to detect inappropriate content in text. The API can be used to detect profanity, hate speech, and other inappropriate content in text. The API is lightning-fast and can process thousands of requests per second. The API is easy to use and can be integrated into any application with just a few lines of code.',
+        description:'Profinati Guardian is a real-time content moderation API that uses Embeddings Concept  to detect inappropriate content in text. The API can be used to detect profanity, hate speech, and other inappropriate content in text. The API is lightning-fast and can process thousands of requests per second. The API is easy to use and can be integrated into any application with just a few lines of code.',
         link:'https://profinati-ui.vercel.app/'
       },
       {
