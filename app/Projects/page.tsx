@@ -9,7 +9,20 @@ const page = () => {
         imageUrl:string,
         description:string,
         link:string
-    }[] = [{
+    }[] = [
+      {
+        title:'Profinaty Guardian',
+        imageUrl:'profinati.png',
+        description:'Lightning-Fast API for Real-Time',
+        link:'https://profinati-ui.vercel.app/'
+      },
+      {
+        title:'Imaginify',
+        imageUrl:'imaginify.png',
+        description:'An Image Generation Tool that leverages the power of AI to generate images based on the user’s input. The user can input a text description, and the AI will generate an image based on the input. The user can also download the generated image.',
+        link:'https://ygn-imaginify.vercel.app/'
+      },
+      {
         title:'Pricify',
         imageUrl:'/pricify.png',
         description:' Pricify is a platform that uses web scraping to scrape Amazon products using their URLs. This website displays the scraped data to the user and provides a link through which the user can buy the product. All the latest scraped products will be added to the Our Products section.',
