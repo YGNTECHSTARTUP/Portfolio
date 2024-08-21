@@ -12,13 +12,13 @@ const page = () => {
     }[] = [
       {
         title:'Profinaty Guardian',
-        imageUrl:'profinati.png',
+        imageUrl:'/profinati.png',
         description:'Lightning-Fast API for Real-Time',
         link:'https://profinati-ui.vercel.app/'
       },
       {
         title:'Imaginify',
-        imageUrl:'imaginify.png',
+        imageUrl:'/imaginify.png',
         description:'An Image Generation Tool that leverages the power of AI to generate images based on the user’s input. The user can input a text description, and the AI will generate an image based on the input. The user can also download the generated image.',
         link:'https://ygn-imaginify.vercel.app/'
       },
