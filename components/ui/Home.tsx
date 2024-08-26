@@ -51,7 +51,7 @@ const Home = () => {
             <Link href={'/Resume.pdf'} target='_blank'>
             <Button variant='outline' className='mt-5 bg-black text-white rounded-2xl hover:scale-105 hover:text-teal-100 dark:hover:text-violet-300'>Check out my resume!</Button>
             </Link>
-            <Link href={'mailto:ygntechstartup@gmail.com'}>
+            <Link href={'mailto:gagannaidu2006@gmail.com'}>
             <Button variant='outline' className='mt-5  bg-black text-white rounded-2xl hover:scale-105 hover:text-teal-100 dark:hover:text-violet-300 ml-2'>Hire Me!</Button>            
             </Link>
            </div>
