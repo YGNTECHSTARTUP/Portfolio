@@ -11,6 +11,18 @@ const page = () => {
         link:string
     }[] = [
       {
+        title:"Cross Roads With SHazin Hijazy",
+        imageUrl:'/crossroads.png',
+        description:"Cross Roads with Shazin Hijazy a talk show which Focused on promoting entrepreneurship, leadership, and innovation",
+        link:"https://crossroadswithshazin.vercel.app/"
+      },
+      {
+        title:"GDGOC AUCE Website",
+        imageUrl:'/gdgoc.png',
+        description:"GDGOC AUCE is Community of Google Developer Groups On Campus Andhra University College of Engineering. This website is made using Next.js and Tailwind CSS. ",
+        link:"https://gdgoc-auce.vercel.app/"
+      },
+      {
         title:'Profinaty Guardian',
         imageUrl:'/profinati.png',
         description:'Profinati Guardian is a real-time content moderation API that uses Embeddings Concept  to detect inappropriate content in text. The API can be used to detect profanity, hate speech, and other inappropriate content in text. The API is lightning-fast and can process thousands of requests per second. The API is easy to use and can be integrated into any application with just a few lines of code.',
