@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className={`mt-2 pt-2  border-t w-full items-center bottom-0  border-white/10 flex bg-background/80 text-pretty text-primary justify-center transition-all duration-300   ${shantell.className}`}>
+    <div className={`mt-2 pt-2  border-t w-full relative items-center bottom-0  border-white/10 flex bg-background/80 text-pretty text-primary justify-center transition-all duration-300   ${shantell.className}`}>
       <p className="text-sm text-center md:text-left">
         © {currentYear} <span className='underline decoration-dotted decoration-primary'>
           <Link href={"https://ygntech.vercel.app"}>
