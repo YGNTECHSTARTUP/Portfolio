@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 import {
   ClerkProvider,
 } from '@clerk/nextjs'
+import Footer from "./components/ui/Footer";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,6 +29,7 @@ export default function RootLayout({
           >
    <Navbar/>
    {children}
+   <Footer/>
           </ThemeProvider>
      
         </body>

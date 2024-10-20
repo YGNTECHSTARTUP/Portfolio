@@ -10,7 +10,7 @@ const NavLinks = [
   { name: "My Tech Stack", href: "/MyTechStack" },
   { name: "Projects", href: "/Projects" },
   { name: "GuestBook", href: "/GuestBook" },
-  { name: "NewsLetter", href: "/ContactMe" }
+  { name: "ContactMe", href: "/ContactMe" }
 ];
 
 const navlink = [
@@ -22,7 +22,7 @@ const navlink = [
 const nav = [
   { name: "My Tech Stack", href: "/MyTechStack" },
   { name: "Projects", href: "/Projects" },
-  { name: "NewsLetter", href: "/ContactMe" }
+  { name: "ContactMe", href: "/ContactMe" }
 ];
 
 const navbar = () => {

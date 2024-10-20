@@ -5,7 +5,7 @@ const Icons = () => {
   return (
     <div>
         
-          <div className='container mx-auto gap-3 flex justify-center items-center min-h-screen min-w-full'>
+          <div className='container mx-auto gap-3 flex justify-center items-center min-w-full'>
          
      {
        links.map((link,ind)=>(
