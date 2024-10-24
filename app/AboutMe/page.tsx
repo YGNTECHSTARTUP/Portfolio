@@ -18,7 +18,7 @@ const page = () => {
         <li className='m-5'>
       Hey I&apos; m Gagan aka <Link href={'https://github.com/YGNTECHSTARTUP'} target='_blank' >
       <span className='text-teal-700  underline dark:text-violet-700  underline-offset-2 decoration-wavy'>YGN</span>
-      </Link> on the web. I&apos;m a 17 y/o student belonging to the Homo Sapiens species,I am a brother, a son, a friend, a self taught web developer and programmer, an open source enthusiasist,and also an extreme <span className='text-teal-700  underline dark:text-violet-700  underline-offset-2 decoration-wavy'>
+      </Link> on the web. I&apos;m a 18 y/o student belonging to the Homo Sapiens species,I am a brother, a son, a friend, a self taught web developer and programmer, an open source enthusiasist,and also an extreme <span className='text-teal-700  underline dark:text-violet-700  underline-offset-2 decoration-wavy'>
       Quiet Storm
         </span>
         </li>
